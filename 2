@@ -1,0 +1,10 @@
+stacktype stinit()
+{
+  stacktype p;
+  if((p=new stacktype())!=null)
+  {
+    p.top=0;
+    return p;
+  }
+  return null;
+}
