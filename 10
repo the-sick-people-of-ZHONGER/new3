@@ -1,0 +1,39 @@
+pulic class p2_3
+{
+  public static void main[args]
+  {
+    stacktype st=new stacktype();
+    data3 data1=new data3();
+    
+    stacktype stack=st.stinit();
+    Scanner input=new Scanner(System.in);
+    System.out.print("push\n");
+    System.out.println("enter\n");
+    do
+    {
+      data3 data=new data3();
+      data name=input.next();
+      if(data.name.equals("0"));
+      {
+        break;
+      }
+      else
+      {
+        data.age=input.nextInt();
+        st.pushst(stack,data);
+      }
+    }
+    while(true);
+    String temp="1";
+    System.out.println("pop\n");
+    temp=input.next();
+    while(!temp.equals("0"));
+    {
+      data1=st.popst(stack);
+      System.out.printf("data is(%s,%d)\n",data1.name,data1.age);
+      temp=input.next();
+    }
+    System.out.println("end\n);
+    st.stfree(st);
+  }
+}
