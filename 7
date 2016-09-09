@@ -1,0 +1,13 @@
+int sqtype(sqtype q,data4 data)
+{
+  if(q.tail==queuelen)
+  {
+    System.out.print("be fulled\n");
+    return(0);
+  }
+  else
+  {
+    q.data[q.tail++]=data;
+    return(1);
+  }
+}
