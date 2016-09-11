@@ -1,0 +1,6 @@
+int sqtypelen(sqtype q)
+{
+  int temp;
+  temp=q.head-q.tail;
+  return(temp);
+}
