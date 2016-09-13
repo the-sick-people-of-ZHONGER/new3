@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class data4
+{
+  Srting name;
+  int age;
+}
+class sqtype
+{
+  static final int queuelen=15;
+  data4[] data=new data4[queuelen];
+  int head;
+  int tail;
+  sqtype sqtypeinit()
+  {
+    sqtype q;
+    if((q=new sqtype())!=null)
+    {
+      q.head=0;
+      q.tail=0;
+      return q;
+    }
+    else
+    {
+      return null;
+    }
+  }
+  int sqtypeisempty
+  {
+    int temp=0;
+    if(q.head==q.tail)
+      temp=1;
+    return(temp);
+  }
+  int sqtypeisfull(sqtype q)
+  {
+    int temp;
+    if(q.tail==queuelen)
+      temp=1;
+    return(temp);
+  }
+  void sqtypeclear(sqtype q)
+  {
+    q.head=0;
+    q.tail=0;
+  }
+  void sqtypefree(sqtype q)
+  {
+    if(q!=null)
+      q=null;
+  }
