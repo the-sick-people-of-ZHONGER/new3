@@ -48,3 +48,57 @@ class sqtype
     if(q!=null)
       q=null;
   }
+  int insqtype(sqtype q,data4 data)
+  {
+    if(q.tail==queuelen)
+    {
+      System.out.print("error by full\n");
+      return(0);
+    }
+    else
+    {
+      q.data[q.tail++]=data;
+      return(1);
+    }
+  }
+  data4 outsqtype(sqtype q)
+  {
+    if(q.head==q.tail)
+    {
+      System.out.print("error by empty\n");
+      System.exit(0);
+    }
+    else
+    {
+      return q.data[q.head++];
+    }
+    return null;
+  }
+  data4 peeksqtype(sqtype q)
+  {
+    if(sqtypeisempty(q)=1;
+    {
+      System.out.print("empty list\n");
+      return null;
+    }
+    else
+    {
+      return q.data[q.head];
+    }
+  }
+  int sqtypelen(sqtype q)
+  {
+    int temp;
+    temp=q.tail-q.head;
+    return(temp);
+  }
+}
+public class p2_4
+{
+  public static void main(String[] args)
+  {
+    sqtype st=new sqtype();
+    data4 data1;
+    Scanner input=new Scanner(System.in);
+    Sqtype stack=st.sqtypeinit();
+    
