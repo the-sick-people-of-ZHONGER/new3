@@ -101,4 +101,34 @@ public class p2_4
     data4 data1;
     Scanner input=new Scanner(System.in);
     Sqtype stack=st.sqtypeinit();
+    System.out.print("enter\n");
+    System.out.println("enter age,name\n");
+    do
+    {
+      data4 data=new data4();
+      data.name=input.next();
+      data.age=input.nextInt();
+      if(data.name.equals("0"))
+      {
+        break;
+      }
+      else
+      {
+        st.insqtype(stack,data);
+      }
+    }
+    while(true);
     
+    String temp="1";
+    System.out.println("out\n");
+    temp=input.next();
+    while(!temp.equals("0")
+    {
+      data1=st.outsqtype(stack);
+      System.out,printf("data is(%s,%d)\n",data1.name,data1.age);
+      temp=input.next();
+    }
+    System.out.println("end\n");
+    st.sqtypefree(stack);
+  }
+}
